@@ -1,11 +1,12 @@
 
+"" Leader
 let mapleader=","
 
+"" Syntax
 set nocompatible
 syntax enable
 set encoding=utf-8
 set showcmd
-
 filetype plugin indent on
 
 "" Whitespace
@@ -21,11 +22,12 @@ set ignorecase
 set smartcase
 
 "" Colors
-color Tomorrow-Night-Bright
-" set t_Co=256 " 256 colors
-" :set background=dark
+colorscheme Tomorrow-Night-Bright
 
 "" Backup Files
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+"" Mapping
+nnoremap <leader><leader> <c-^>
