@@ -1,21 +1,23 @@
 [user]
-    name = Ryan Dowling
-    email = rdowling@areteinc.com
+  name = Ryan Dowling
+  email = rdowling@areteinc.com
 [core]
-    autocrlf = true
-    eol = native
+  autocrlf = true
+  eol = native
 [diff]
-    tool = winmerge
+  tool = winmerge
 [difftool "winmerge"]
-    cmd = winmerge.sh "$LOCAL" "$REMOTE" "$BASE"
+  cmd = winmerge.sh "$LOCAL" "$REMOTE" "$BASE"
 [difftool]
-    prompt = false
+  prompt = false
 [color]
-    ui = auto
+  ui = auto
 [alias]
-    r = status
-    l = log --decorate=short --abbrev-commit --format=oneline
-    o = checkout 
-    g = commit -m
+  r = status
+  l = log --decorate=short --abbrev-commit --format=oneline
+  o = checkout 
+  g = commit -m
+  b = branch
+  a = add --all
 #[merge]
-#    tool = vimdiff
+#  tool = vimdiff
