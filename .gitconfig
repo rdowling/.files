@@ -1,13 +1,10 @@
 [user]
-  name = Ryan Dowling
-  email = rdowling@areteinc.com
+	name = Ryan Dowling
+	email = rdowling@areteinc.com
 [core]
-  autocrlf = true
+	autocrlf = true
   eol = native
-[diff]
-  tool = winmerge
-[difftool "winmerge"]
-  cmd = winmerge.sh "$LOCAL" "$REMOTE" "$BASE"
+  ignorecase = true
 [difftool]
   prompt = false
 [color]
@@ -16,8 +13,13 @@
   r = status
   l = log --decorate=short --abbrev-commit --format=oneline
   o = checkout 
-  g = commit -m
+  g = commit --message
   b = branch
   a = add --all
 #[merge]
 #  tool = vimdiff
+[difftool "sourcetree"]
+	cmd = 'sgdm' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = 'sgdm' -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
