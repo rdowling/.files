@@ -2,9 +2,9 @@
 	name = Ryan Dowling
 	email = rdowling@areteinc.com
 [core]
-	autocrlf = true
-  eol = native
-  ignorecase = true
+	autocrlf = true # false #true
+	eol = native
+[diff]
 [difftool]
   prompt = false
 [color]
