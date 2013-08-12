@@ -1,4 +1,3 @@
-
 "" Leader
 let mapleader=","
 
@@ -29,8 +28,6 @@ nnoremap <c-l> :nohl<cr>
 
 "" Colors
 colorscheme Tomorrow-Night-Bright
-set t_Co=256
-set background=dark
 
 "" Backup Files
 set backup
@@ -39,7 +36,6 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 "" Mapping
 nnoremap <leader><leader> <c-^>
-<<<<<<< HEAD
 nnoremap <leader>w :w<cr>
 nnoremap <leader>r :!jruby % <cr><cr>
 nnoremap <leader>b :b 
@@ -55,11 +51,3 @@ nnoremap <C-t>     :tabnew<CR>
 inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
-=======
-nmap <c-l> :nohl<cr>
-nnoremap <leader>w :w<cr>
-nnoremap <leader>b :b 
-nnoremap <leader>r :!ruby % <cr>
-nnoremap <Up> :<Up>
-:set timeout timeoutlen=1000 ttimeoutlen=100
->>>>>>> Colors
