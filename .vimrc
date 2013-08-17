@@ -1,40 +1,40 @@
-"" Leader
+" Leader
 let mapleader=","
 
-"" Syntax
+" Syntax
 set nocompatible
 syntax enable
 set encoding=utf-8
 set showcmd
 filetype plugin indent on
 
-"" Whitespace
+" Whitespace
 set wrap
 set tabstop=2 shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
 
-"" Navigation
-"" don't skip over wrapped lines
+" Navigation
+" don't skip over wrapped lines
 :nmap j gj
 :nmap k gk
 
-"" Searching
+" Searching
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 nnoremap <c-l> :nohl<cr>
 
-"" Colors
+" Colors
 colorscheme Tomorrow-Night-Bright
 
-"" Backup Files
+" Backup Files
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-"" Mapping
+" Mapping
 nnoremap <leader><leader> <c-^>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>r :!jruby % <cr><cr>
@@ -44,7 +44,7 @@ nnoremap <leader>b :b
 noremap <leader>y "*y
 noremap <leader>p "*p
 
-"" Tabbing navigation
+" Tabbing navigation
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
 nnoremap <C-t>     :tabnew<CR>
